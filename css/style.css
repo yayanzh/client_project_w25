@@ -151,6 +151,22 @@ footer a{
 
 #advising{
     list-style-type: none;
+    background-color: #FFCB05;
+}
+
+#advising img{
+    margin: auto;
+}
+
+#advising h3{
+    color: white;
+}
+
+#advising li{
+    background-color: #00274C;
+    color: white;
+    margin: 10px;
+    padding: 10px;
 }
 
 section{
@@ -193,9 +209,12 @@ section{
 #contact{
     background-color: #FFCB05;
     padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #contact figure{
+    grid-column: 1 / span 2;
     background-color: #00274C;
     color: white;
     padding: 10px;
@@ -203,4 +222,22 @@ section{
 
 #contact img{
     margin: auto;
+}
+
+#contact h2{
+    grid-column: 1 / span 2;
+}
+
+#website{
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.contact_info{
+    grid-column: 1;
+}
+
+#contact address{
+    grid-column: 2;
+    grid-row: 4 / 6;
 }
