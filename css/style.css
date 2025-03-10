@@ -1,0 +1,206 @@
+.skip{
+    position: absolute;
+    top: -40px;
+    font-family: 'Montserrat';
+    background-color: white;
+    color: #00274C;
+}
+
+.skip:focus{
+    top: 20px;
+}
+
+:focus{
+    background-color: white;
+    padding: 10px;
+    color:#00274C;
+    border: 2px solid white;
+}
+
+main a:focus{
+    background-color: #00274C;
+    padding: 10px;
+    color:white;
+    border: 2px solid white;
+}
+
+.active{
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
+header{
+    display: grid;
+    grid-template-columns: fit-content(60px) 3fr; 
+    align-items: center;
+    background-color: #00274C;
+    font-size: 0.9em;
+}
+
+#logo{
+    grid-column: 1 / 2;
+    height: 60px;
+    width: auto;
+}
+
+nav ul{
+    grid-column: 2 / span 4;
+    display: grid;
+    grid-template-columns: fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%);
+    align-items: center;
+}
+
+nav ul li a{
+    padding: 10px;
+    color: #FFCB05;
+    white-space: normal;
+    text-align: center;
+    word-break: normal;
+    overflow-wrap: break-word;
+    display: block;
+}
+
+nav ul li a:hover{
+    color: #00274C;
+    background-color: #FFCB05;
+    opacity: 50%;
+}
+
+h1, h2, h3{
+    font-family: 'Oswald';
+    padding: 10px;
+    color: #00274C;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    background-color: #FFCB05;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p, ol, ul, figcaption, address{
+    font-family: 'Montserrat';
+    padding: 10px;
+    line-height: 1.5;
+}
+
+ol, ul{
+    list-style-position: inside;
+}
+
+li{
+    line-height: 1.5;
+    padding: 2px;
+}
+
+main img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 10px;
+}
+
+figcaption{
+    font-style: italic;
+}
+
+footer{
+    padding: 10px;
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+footer a{
+    color: #FFCB05;
+}
+
+/* index specific code*/
+
+#health .articles-container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;  */
+    background-color: #FFCB05;
+    padding: 10px;
+}
+
+#health article {
+    background-color: #00274C;
+    margin: 10px; 
+    color: white;
+}
+
+#health h3{
+    background-color: #00274C;
+    color: white;
+}
+
+#health img {
+    margin: auto;
+}
+
+/* academic advising specific code*/
+
+#advising{
+    list-style-type: none;
+}
+
+section{
+    border-bottom: 3px solid #00274C;
+}
+
+/* study spaces specific code*/
+
+#study {
+    list-style: none;
+    background-color: #FFCB05;
+    padding: 10px;
+}
+
+#study li {
+    background-color: #00274C;
+    margin: 10px; 
+    padding: 0px;
+}
+
+#study h3, #study a{
+    color: white;
+}
+
+#study img {
+    margin: auto;
+}
+
+#study:focus{
+    border: 2px solid;
+    background-color: #FFCB05;
+    padding: 10px;
+    border: 2px solid white;
+    color: #00274C;
+}
+
+
+/*CAPS specific code*/
+
+#contact{
+    background-color: #FFCB05;
+    padding: 10px;
+}
+
+#contact figure{
+    background-color: #00274C;
+    color: white;
+    padding: 10px;
+}
+
+#contact img{
+    margin: auto;
+}
