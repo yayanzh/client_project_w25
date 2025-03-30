@@ -8,6 +8,7 @@
 
 .skip:focus{
     top: 20px;
+    border: 2px solid blue;
 }
 
 :focus{
@@ -211,6 +212,7 @@ section{
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 #contact figure{
@@ -224,33 +226,26 @@ section{
     margin: auto;
 }
 
-#contact h2{
-    grid-column: 1 / span 2;
-}
-
-#website{
-    grid-column: 1 / span 2;
-    grid-row: 3 / span 1;
-}
-
-.contact_info{
-    grid-column: 1;
+#caps-contact{
+    grid-column: 1 / span 1;
 }
 
 #contact address{
-    grid-column: 2;
-    grid-row: 4 / 6;
+    grid-column: 2 /span 1;
 }
+
 
 /*Tablet & Desktop view*/
 
 @media only screen and (min-width: 800px){
 
+    /* home page */
+
     section{
         border: 0px;
     }
     
-    #top{
+    #top, #mental-health, #life-outside-classroom{
         padding: 0 30%;
     }
 
@@ -268,12 +263,76 @@ section{
         grid-template-columns: 1fr 1fr;
     }
 
-    #mental-health{
+    .articles-container img{
+        width: 100%; 
+        height: auto; 
+        object-fit: cover; 
+        object-position: 0 20%;
+        aspect-ratio: 4 / 3;
+        /* https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit */
+    }
+
+    /* academic advising */
+
+    #overview, #advisor_help, #advising_info, #advisor_h2{
         padding: 0 30%;
     }
 
-    #life-outside-classroom{
+    #advising{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #advising img{
+        width: 100%; 
+        height: auto; 
+        object-fit: cover; 
+        object-position: 0 20%;
+        aspect-ratio: 1 / 1;
+        /* https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit */
+    }
+
+    /* study spaces */
+
+    #study-about, #study_h2{
         padding: 0 30%;
     }
 
+    #study{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* CAPS page */
+
+    #caps-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 15% 0 20%;
+        align-items: center;
+    }
+
+    #contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        padding: 10px 20%;
+    }
+
+    #contact figure{
+        grid-column: 1 / span 1;
+    }
+
+    #caps-contact{
+        grid-column: 2 / span 1;
+        grid-row: 1 /span 1;
+        padding-left: 25px;
+    }
+
+    #contact address{
+        grid-column: 3 /span 1;
+        grid-row: 1 /span 1;
+        justify-self: start;
+    }
 }
