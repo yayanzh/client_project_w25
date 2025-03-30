@@ -241,3 +241,39 @@ section{
     grid-column: 2;
     grid-row: 4 / 6;
 }
+
+/*Tablet & Desktop view*/
+
+@media only screen and (min-width: 800px){
+
+    section{
+        border: 0px;
+    }
+    
+    #top{
+        padding: 0 30%;
+    }
+
+    #health h2, #health > p{
+        padding: 0 30%;
+        margin: 10px 0;
+    }
+
+    #health .articles-container{
+        padding: 0 25%;
+    }
+
+    .articles-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #mental-health{
+        padding: 0 30%;
+    }
+
+    #life-outside-classroom{
+        padding: 0 30%;
+    }
+
+}
