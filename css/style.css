@@ -79,8 +79,9 @@ nav ul li a:hover{
     opacity: 50%;
 }
 
-h1, h2, h3{
+h1, h2, h3, legend{
     font-family: 'Oswald';
+    font-weight: bold;
     padding: 10px;
     color: #00274C;
     line-height: 1.5;
@@ -92,7 +93,7 @@ h1{
     background-color: #FFCB05;
 }
 
-h2{
+h2, legend{
     font-size: 2em;
 }
 
@@ -100,7 +101,7 @@ h3 {
     font-size: 1.5em;
 }
 
-p, ol, ul, figcaption, address{
+p, ol, ul, figcaption, address, label, input[type="submit"]{
     font-family: 'Montserrat';
     padding: 10px;
     line-height: 1.5;
@@ -184,6 +185,36 @@ footer a{
 
 section{
     border-bottom: 3px solid #00274C;
+}
+
+#advising-contact{
+    margin: 0 30%;
+    padding: 10px 20px 10px 10px;
+    border: 3px solid #00274C;
+    background-color: #FFCB05;
+}
+
+input{
+    margin: 10px 0;
+}
+
+input[type=text], input[type=email]{
+    box-sizing: border-box;
+    border: 2px solid 	#f1c232;
+    border-radius: 4px;
+    background-color: #fae7ac;
+    resize: none;
+}
+
+textarea{
+    width: 80%;
+    height: 150px;
+    margin: 0 0 0 5px;
+    box-sizing: border-box;
+    border: 2px solid 	#f1c232;
+    border-radius: 4px;
+    background-color: 	#fae7ac;
+    resize: none;
 }
 
 /* study spaces specific code*/
@@ -306,6 +337,7 @@ section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+
     #advising img{
         width: 100%; 
         height: auto; 
@@ -313,6 +345,11 @@ section{
         object-position: 0 20%;
         aspect-ratio: 1 / 1;
         /* https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit */
+    }
+
+    textarea{
+        width: 100%;
+        height: 150px;
     }
 
     /* study spaces */

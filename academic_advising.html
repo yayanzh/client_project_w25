@@ -11,7 +11,7 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
-    <div class = "skip" tabindex="0"><a href = "#main">Skip to Main Content</a></div>
+    <a href = "#main" class = "skip" tabindex="0" >Skip to Main Content</a>
     <header>
         <img id = "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
@@ -100,6 +100,23 @@
                 <li><a href="https://sites.google.com/umich.edu/msiacademicadvising/academic-advising/connecting-with-an-advisor">What type of appointment should I book?</a></li>
             </ul>
         </section>
+        <section id = "advising-contact">
+            <form action="https://formspree.io/f/mnnpqzpn" method="POST">
+                <fieldset>
+                    <legend>Contact BSI Advising</legend>
+                    <div id = "contact-form">
+                        <label for="name">Your name</label>
+                        <input type="text" id = "name"><br/>
+                        <label for="email">Your email</label>
+                        <input type="email" id = "email"><br/>
+                        <label for="message" class ="message">What can we help you with today?</label><br/>
+                        <textarea class ="message"></textarea>
+                        <input type="submit" value = "Submit">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
     </main>
     <footer>
         <p>BSI Student Resources | <a href="https://www.si.umich.edu">School of Information at the University of Michigan</a> | &#169 <span id="year"></span> Yaya Harman</p>
