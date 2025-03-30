@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>404: Page not found</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <div class = "skip" tabindex="0"><a href = "#main">Skip to Main Content</a></div>
+    <header>
+        <img id = "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav>
+            <ul>
+                <li><a class = "active" href = "index.html">Home</a></li>
+                <li><a href = "academic_advising.html">Academic Advising</a></li>
+                <li><a href = "study_spaces.html">Study Spaces</a></li>
+                <li><a href = "CAPS.html">CAPS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id = "main">
+        <div id = "no-page">
+            <h1>404: Page not found</h1>
+            <p>There's a lot of answers on this site, but this is one we don't have. <br> Go back <a href="index.html">home</a>?</p>
+        </div>
+    </main>
+        <footer>
+            <p>BSI Student Resources | <a href="https://www.si.umich.edu">School of Information at the University of Michigan</a> | &#169 <span id="year"></span> Yaya Harman</p>
+        </footer>
+</body>
+</html>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    // https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/
+</script>

@@ -1,3 +1,15 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    margin-top: auto;
+}
+
+/* code above from: https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14 */
+
 .skip{
     position: absolute;
     top: -40px;
@@ -232,6 +244,17 @@ section{
 
 #contact address{
     grid-column: 2 /span 1;
+}
+
+/* 404 Page */
+
+#no-page{
+    text-align: center;
+}
+
+#no-page p{
+    font-size: 1.5rem;
+    padding: 20%;
 }
 
 

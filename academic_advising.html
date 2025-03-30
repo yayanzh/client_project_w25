@@ -102,9 +102,12 @@
         </section>
     </main>
     <footer>
-        <p>BSI Student Resources | <a href="https://www.si.umich.edu">School of Information at the University of Michigan</a></p>
-    </footer>
-    
+        <p>BSI Student Resources | <a href="https://www.si.umich.edu">School of Information at the University of Michigan</a> | &#169 <span id="year"></span> Yaya Harman</p>
+    </footer>   
 </body>
-
 </html>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    // https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/
+</script>

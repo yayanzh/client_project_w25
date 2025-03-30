@@ -11,6 +11,8 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
+    <div id="page-container">
+    <div id="content-wrap">
     <div class = "skip" tabindex="0"><a href = "#main">Skip to Main Content</a></div>
     <header>
         <img id = "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
@@ -104,8 +106,15 @@
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
-    <footer>
-        <p>BSI Student Resources | <a href="https://www.si.umich.edu">School of Information at the University of Michigan</a></p>
+    </div>
+    <footer id = "footer">
+        <p>BSI Student Resources | <a href="https://www.si.umich.edu">School of Information at the University of Michigan</a> | &#169 <span id="year"></span> Yaya Harman</p>
     </footer>
+    </div>
 </body>
 </html>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    // https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/
+</script>
