@@ -100,7 +100,7 @@
                 <li><a href="https://sites.google.com/umich.edu/msiacademicadvising/academic-advising/connecting-with-an-advisor">What type of appointment should I book?</a></li>
             </ul>
         </section>
-        <section id = "advising-contact">
+        <div id = "advising-contact">
             <form action="https://formspree.io/f/mnnpqzpn" method="POST">
                 <fieldset>
                     <legend>Contact BSI Advising</legend>
@@ -115,16 +115,18 @@
                     </div>
                 </fieldset>
             </form>
-        </section>
+        </div>
 
     </main>
     <footer>
-        <p>BSI Student Resources | <a href="https://www.si.umich.edu">School of Information at the University of Michigan</a> | &#169 <span id="year"></span> Yaya Harman</p>
+        <p>BSI Student Resources | <a href="https://www.si.umich.edu">School of Information at the University of Michigan</a> | &#169; <span id="year"></span> Yaya Harman</p>
     </footer>   
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        // https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/
+    </script>
+    
 </body>
 </html>
 
-<script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-    // https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/
-</script>
